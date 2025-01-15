@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Website</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #fff;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 50px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        header nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #333;
+            font-size: 1rem;
+        }
+
+        .hero {
+            position: relative;
+            text-align: center;
+            color: white;
+        }
+
+        .hero img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .hero .content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .hero .content h1 {
+            font-size: 3rem;
+            margin: 0;
+        }
+
+        .hero .content p {
+            margin: 15px 0;
+            font-size: 1.2rem;
+        }
+
+        .hero .content button {
+            padding: 10px 20px;
+            font-size: 1rem;
+            border: none;
+            background: #0078d7;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .values {
+            text-align: center;
+            padding: 50px 20px;
+            background-color: #f8f8f8;
+        }
+
+        .values h2 {
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+
+        .values p {
+            color: #666;
+            margin-bottom: 30px;
+        }
+
+        .values .value-items {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        .value-item {
+            text-align: center;
+            max-width: 150px;
+        }
+
+        .value-item img {
+            width: 50px;
+            height: 50px;
+            margin-bottom: 10px;
+        }
+
+        .tours {
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .tours h2 {
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+
+        .tours .tour-cards {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .tour-card {
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            overflow: hidden;
+            max-width: 200px;
+            text-align: left;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .tour-card img {
+            width: 100%;
+            height: auto;
+        }
+
+        .tour-card .info {
+            padding: 15px;
+        }
+
+        .tour-card .info h3 {
+            margin: 0;
+            font-size: 1rem;
+            color: #333;
+        }
+
+        .tour-card .info p {
+            margin: 5px 0;
+            font-size: 0.9rem;
+            color: #666;
+        }
+
+        .tour-card .info button {
+            margin-top: 10px;
+            padding: 5px 10px;
+            font-size: 0.8rem;
+            border: none;
+            background: #0078d7;
+            color: white;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">Island</div>
+        <nav>
+            <a href="#">Our Tours</a>
+            <a href="#">About Us</a>
+            <a href="#">Booking</a>
+            <a href="#">FAQ</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <img src="hero-image.png" alt="Landscape">
+        <div class="content">
+            <h1>Explore the sights of the Azores</h1>
+            <p>A place where nature and adventure unite</p>
+            <button>Book Now</button>
+        </div>
+    </section>
+
+    <section class="values">
+        <h2>Top values for you</h2>
+        <p>Try variety of benefits when using our services</p>
+        <div class="value-items">
+            <div class="value-item">
+                <img src="src/airport-icon.png" alt="Airport Pickup">
+                <h3>Airport Pickup</h3>
+                <p>We provide escort from the airport to the hotel.</p>
+            </div>
+            <div class="value-item">
+                <img src="src/booking-icon.png" alt="Easy Booking">
+                <h3>Easy Booking</h3>
+                <p>Quick and easy booking of tours for upcoming dates.</p>
+            </div>
+            <div class="value-item">
+                <img src="src/guide-icon.png" alt="Best Tour Guide">
+                <h3>Best Tour Guide</h3>
+                <p>Our best tour guide is ready to guide your trip.</p>
+            </div>
+            <div class="value-item">
+                <img src="src/promo-icon.png" alt="Promos">
+                <h3>Lots of Promos</h3>
+                <p>Various promotions and drawings of tours.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="tours">
+        <h2>Choose your tour</h2>
+        <div class="tour-cards">
+            <div class="tour-card">
+                <img src="src/tour1.png" alt="Alone with Nature">
+                <div class="info">
+                    <h3>Alone with Nature</h3>
+                    <p>$100 / person</p>
+                    <button>View</button>
+                </div>
+            </div>
+            <div class="tour-card">
+                <img src="src/tour2.png" alt="Jeep Ride">
+                <div class="info">
+                    <h3>Jeep Ride</h3>
+                    <p>$200 / person</p>
+                    <button>View</button>
+                </div>
+            </div>
+            <div class="tour-card">
+                <img src="src/tour3.png" alt="Hiking Tour">
+                <div class="info">
+                    <h3>Hiking Tour</h3>
+                    <p>$150 / person</p>
+                    <button>View</button>
+                </div>
+            </div>
+            <div class="tour-card">
+                <img src="src/tour4.png" alt="Corners of the Island">
+                <div class="info">
+                    <h3>Corners of the Island</h3>
+                    <p>$220 / person</p>
+                    <button>View</button>
+                </div>
+            </div>
+        </div>
+        <button>See All</button>
+    </section>
+</body>
+</html>
